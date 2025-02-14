@@ -11,10 +11,7 @@ import java.util.Map;
 
 @Entity
 @Data @NoArgsConstructor @AllArgsConstructor
-public class Chat {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Chat extends AbstractSuperClass{
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "chat_qa_mapping",

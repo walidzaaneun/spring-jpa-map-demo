@@ -14,10 +14,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Question {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Question  extends AbstractSuperClass{
 
     private String content;
     private LocalDateTime timestamp;

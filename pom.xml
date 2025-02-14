@@ -54,7 +54,21 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.walidzaaneun</groupId>
+            <artifactId>ulid-java-generator</artifactId>
+            <version>1.0.2</version>
+        </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub walidzaaneun/ulid-java-generator Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/walidzaaneun/ulid-java-generator</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
